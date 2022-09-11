@@ -30,7 +30,7 @@ const AboutSection = () => {
           Contact us for any photography or videography for ideas that you have.
           We have porfessionals with amazing skills.
         </p>
-        <button>Contact us</button>
+        <button>Contact Us</button>
       </StyledDescription>
       <StyledImage>
         <img src={home1} alt="Home1"></img>
