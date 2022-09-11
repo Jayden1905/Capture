@@ -79,7 +79,7 @@ const StyledCard = styled.div`
     align-items: center;
 
     h3 {
-      marign-left: 1rem;
+      margin-left: 1rem;
       background: white;
       color: black;
       padding: 1rem;
