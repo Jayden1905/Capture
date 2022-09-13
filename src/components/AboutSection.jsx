@@ -9,6 +9,8 @@ import {
   StyledHide,
 } from "../styles";
 
+import { Link } from "react-router-dom";
+
 const AboutSection = () => {
   return (
     <StyledAbout>
@@ -30,7 +32,9 @@ const AboutSection = () => {
           Contact us for any photography or videography for ideas that you have.
           We have porfessionals with amazing skills.
         </p>
-        <button>Contact Us</button>
+        <Link to="/contact">
+          <button>Contact Us</button>
+        </Link>
       </StyledDescription>
       <StyledImage>
         <img src={home1} alt="Home1"></img>

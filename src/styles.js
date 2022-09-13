@@ -26,6 +26,7 @@ const StyledImage = styled.div`
     width: 100%;
     height: 80vh;
     object-fit: cover;
+    object-position: center;
   }
 `;
 

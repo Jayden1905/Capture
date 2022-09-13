@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { StyledAbout } from "../styles";
 
-const FaqSection = () => {
+const FaqSection = ({ faq }) => {
   return (
     <StyledFaq>
       <h2>
