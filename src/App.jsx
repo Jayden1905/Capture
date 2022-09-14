@@ -21,7 +21,7 @@ const App = () => {
       <GlobalStyle />
       <Nav />
       <AnimatePresence mode="wait">
-        <Routes location={location} key={location.key}>
+        <Routes location={location} key={location.pathname}>
           <Route path="/" element={<AboutUs />} />
           <Route path="/work" element={<OurWork />} />
           <Route path="/work/:id" element={<MovieDetail />} />
