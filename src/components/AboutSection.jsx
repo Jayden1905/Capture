@@ -1,7 +1,5 @@
 import React from "react";
 import home1 from "../assets/home1.png";
-// Styled
-import styled from "styled-components";
 import {
   StyledAbout,
   StyledDescription,
@@ -9,25 +7,28 @@ import {
   StyledHide,
 } from "../styles";
 
+// Framer Motion
+import { motion } from "framer-motion";
+
 import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
     <StyledAbout>
       <StyledDescription>
-        <div className="title">
+        <motion.div>
           <StyledHide>
-            <h2>We work to make</h2>
+            <motion.h2>We work to make</motion.h2>
           </StyledHide>
           <StyledHide>
-            <h2>
+            <motion.h2>
               your <span>dreams</span> come
-            </h2>
+            </motion.h2>
           </StyledHide>
           <StyledHide>
-            <h2>true.</h2>
+            <motion.h2>true.</motion.h2>
           </StyledHide>
-        </div>
+        </motion.div>
         <p>
           Contact us for any photography or videography for ideas that you have.
           We have porfessionals with amazing skills.
