@@ -16,6 +16,7 @@ const OurWork = () => {
       variants={pageAnimation}
       initial="hidden"
       animate="show"
+      style={{ background: "#fff" }}
     >
       <StyledMovie>
         <h2>The Athlete</h2>

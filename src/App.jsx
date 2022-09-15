@@ -8,12 +8,11 @@ import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 import MovieDetail from "./pages/MovieDetails";
 // Routers
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 // Animation
 import { AnimatePresence } from "framer-motion";
 
 const App = () => {
-  console.log("Hello");
   const location = useLocation();
 
   return (
@@ -21,12 +20,20 @@ const App = () => {
       <GlobalStyle />
       <Nav />
       <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<AboutUs />} />
-          <Route path="/work" element={<OurWork />} />
-          <Route path="/work/:id" element={<MovieDetail />} />
-          <Route path="/contact" element={<ContactUs />} />
-        </Routes>
+        <Switch location={location} key={location.pathname}>
+          <Route path="/" exact>
+            <AboutUs />
+          </Route>
+          <Route path="/work" exact>
+            <OurWork />
+          </Route>
+          <Route path="/work/:id">
+            <MovieDetail />
+          </Route>
+          <Route path="/contact">
+            <ContactUs />
+          </Route>
+        </Switch>
       </AnimatePresence>
     </div>
   );
