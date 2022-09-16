@@ -29,7 +29,7 @@ const App = () => {
           </Route>
           <Route path="/work/:id">
             <MovieDetail />
-          </Route>
+          </Route>{" "}
           <Route path="/contact">
             <ContactUs />
           </Route>

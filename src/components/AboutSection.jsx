@@ -9,6 +9,7 @@ import {
 
 // Framer Motion
 import { motion } from "framer-motion";
+import { titleAim, fade, photoAim } from "../animation";
 
 import { Link } from "react-router-dom";
 
@@ -18,27 +19,27 @@ const AboutSection = () => {
       <StyledDescription>
         <motion.div>
           <StyledHide>
-            <motion.h2>We work to make</motion.h2>
+            <motion.h2 variants={titleAim}>We work to make</motion.h2>
           </StyledHide>
           <StyledHide>
-            <motion.h2>
+            <motion.h2 variants={titleAim}>
               your <span>dreams</span> come
             </motion.h2>
           </StyledHide>
           <StyledHide>
-            <motion.h2>true.</motion.h2>
+            <motion.h2 variants={titleAim}>true.</motion.h2>
           </StyledHide>
         </motion.div>
-        <p>
+        <motion.p variants={fade}>
           Contact us for any photography or videography for ideas that you have.
           We have porfessionals with amazing skills.
-        </p>
+        </motion.p>
         <Link to="/contact">
-          <button>Contact Us</button>
+          <motion.button variants={fade}>Contact Us</motion.button>
         </Link>
       </StyledDescription>
       <StyledImage>
-        <img src={home1} alt="Home1"></img>
+        <motion.img variants={photoAim} src={home1} alt="Home1"></motion.img>
       </StyledImage>
     </StyledAbout>
   );
