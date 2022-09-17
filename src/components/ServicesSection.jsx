@@ -6,10 +6,11 @@ import money from "../assets/money.svg";
 import teamwork from "../assets/teamwork.svg";
 // Import imagaes
 import home2 from "../assets/home2.png";
-
 // Styles
 import { StyledAbout, StyledDescription, StyledImage } from "../styles";
 import styled from "styled-components";
+
+// import {} from "";
 
 const SevicesSection = () => {
   return (
