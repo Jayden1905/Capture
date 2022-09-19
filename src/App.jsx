@@ -1,4 +1,3 @@
-import React from "react";
 // Global Styles
 import GlobalStyle from "./components/GlobalStyle";
 // Import Pages

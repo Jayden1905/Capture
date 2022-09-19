@@ -1,6 +1,6 @@
 const pageAnimation = {
   hidden: {
-    opacity: 0, 
+    opacity: 0,
     y: 300,
   },
 
