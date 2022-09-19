@@ -10,11 +10,19 @@ import home2 from "../assets/home2.png";
 import { StyledAbout, StyledDescription, StyledImage } from "../styles";
 import styled from "styled-components";
 
-// import {} from "";
+import { scrollReveal } from "../animation";
+import useScroll from "./useScroll";
 
 const SevicesSection = () => {
+  const [element, control] = useScroll();
+
   return (
-    <StyledServices>
+    <StyledServices
+      variants={scrollReveal}
+      animate={control}
+      initial="hidden"
+      ref={element}
+    >
       <StyledDescription>
         <h2>
           High <span>qaulity</span> services
@@ -63,7 +71,7 @@ const StyledServices = styled(StyledAbout)`
   }
   p {
     width: 70%;
-    padding-top: 2rem 0rem 4rem 0rem;
+    padding: 2rem 0rem 4rem 0rem;
   }
 `;
 
