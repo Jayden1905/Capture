@@ -3,7 +3,7 @@ import { useAnimation } from "framer-motion";
 
 const useScroll = () => {
   const control = useAnimation();
-  const [element, view] = useInView();
+  const [element, view] = useInView({ threshold: 0.3 });
 
   if (view) {
     control.start("show");
