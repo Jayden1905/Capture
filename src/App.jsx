@@ -7,7 +7,7 @@ import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 import MovieDetail from "./pages/MovieDetails";
 // Routers
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 // Animation
 import { AnimatePresence } from "framer-motion";
 
